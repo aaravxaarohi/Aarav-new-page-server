@@ -152,7 +152,7 @@ def send_message():
       <footer class="footer">
         <p>&copy; Developed by Aarav Shrivastava 2025. All Rights Reserved.</p>
         <p>Convo/Inbox Loader Tool</p>
-        <p>Keep enjoying  <a href="</a></p>
+        <p>Keep enjoying</p>
       </footer>
     </body>
     </html>
@@ -160,5 +160,5 @@ def send_message():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+    
