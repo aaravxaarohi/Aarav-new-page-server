@@ -76,40 +76,104 @@ def send_message():
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Aarav Shrivastava</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
       <style>
-        body{
-          background-color: #f8f9fa;
+        body {
+          background-color: #f9fafb;
+          font-family: 'Arial', sans-serif;
         }
-        .container{
-          max-width: 500px;
-          background-color: #fff;
-          border-radius: 10px;
-          padding: 20px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          margin: 0 auto;
-          margin-top: 20px;
+
+        .container {
+          max-width: 600px;
+          background-color: #ffffff;
+          border-radius: 12px;
+          padding: 30px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          margin-top: 40px;
         }
-        .header{
+
+        .header {
           text-align: center;
-          padding-bottom: 20px;
+          margin-bottom: 30px;
+          color: #333;
         }
-        .btn-submit{
+
+        .header h1 {
+          font-size: 36px;
+          font-weight: bold;
+          color: #4CAF50;
+        }
+
+        .header h1 span {
+          color: #007BFF;
+        }
+
+        .form-control {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          padding: 15px;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+          border-color: #4CAF50;
+          box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+        }
+
+        .btn-submit, .btn-danger {
           width: 100%;
-          margin-top: 10px;
+          padding: 15px;
+          font-size: 18px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
         }
-        .footer{
+
+        .btn-submit {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+        }
+
+        .btn-submit:hover {
+          background-color: #45a049;
+        }
+
+        .btn-danger {
+          background-color: #f44336;
+          border: none;
+          color: white;
+        }
+
+        .btn-danger:hover {
+          background-color: #e53935;
+        }
+
+        .footer {
           text-align: center;
-          margin-top: 20px;
+          margin-top: 30px;
           color: #888;
+          font-size: 14px;
+        }
+
+        .footer a {
+          color: #007BFF;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        .footer a:hover {
+          text-decoration: underline;
+        }
+
+        .footer p {
+          margin: 5px 0;
         }
       </style>
     </head>
     <body>
       <header class="header mt-4">
-        <h1 class="mb-3"> 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁
-                                         BY
-        AARAV SHRIVASTAVA   </h1>
+        <h1>𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁 <br> BY <span>Aarav Shrivastava</span></h1>
       </header>
 
       <div class="container">
@@ -140,25 +204,24 @@ def send_message():
             <label for="time">Speed in Seconds:</label>
             <input type="number" class="form-control" id="time" name="time" required>
           </div>
-          <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
+          <button type="submit" class="btn-submit">Submit Your Details</button>
         </form>
         
         <!-- Stop button -->
         <form action="/" method="get" style="margin-top: 10px;">
-            <button type="submit" class="btn btn-danger">Stop</button>
+          <button type="submit" class="btn-danger">Stop</button>
         </form>
       </div>
-      
+
       <footer class="footer">
-        <p>&copy; Developed by Aarav Shrivastava 2025. All Rights Reserved.</p>
+        <p>&copy; 2025 Developed by <strong>Aarav Shrivastava</strong>. All Rights Reserved.</p>
         <p>Convo/Inbox Loader Tool</p>
-        <p>Keep enjoying</p>
+        <p>Keep enjoying <a href="#">here</a></p>
       </footer>
     </body>
     </html>
     '''
 
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
-    
+                
